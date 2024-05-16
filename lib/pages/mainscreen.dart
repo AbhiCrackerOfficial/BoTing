@@ -55,7 +55,7 @@ class Bg extends StatelessWidget {
                         child: Text(
                           'Host',
                           style: GoogleFonts.orbitron(
-                              fontSize: 22, fontWeight: FontWeight.bold),
+                              fontSize: 22, fontWeight: FontWeight.bold,color:Theme.of(context).primaryColor),
                         ),
                       ),
                       const SizedBox(height: 50),
@@ -78,7 +78,7 @@ class Bg extends StatelessWidget {
                         child: Text(
                           'Join',
                           style: GoogleFonts.orbitron(
-                              fontSize: 22, fontWeight: FontWeight.bold),
+                              fontSize: 22, fontWeight: FontWeight.bold,color:Theme.of(context).primaryColor),
                         ),
                       ),
                     ],

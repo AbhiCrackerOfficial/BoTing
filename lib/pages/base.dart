@@ -18,7 +18,6 @@ class _ScreenManagerState extends State<ScreenManager> {
   final PageController pageController = PageController(initialPage: 0);
   void onItemTapped(int index) {
     setState(() {
-      // manage the page
       pageController.jumpToPage(index);
       selectedIndex = index;
       switchScreen(_screens[index]);

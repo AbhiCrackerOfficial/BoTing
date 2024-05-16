@@ -3,11 +3,10 @@ import 'package:boting/db/models/message.dart';
 import 'package:boting/db/models/room.dart';
 import 'package:boting/db/user_functions.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:boting/widgets/functions.dart';
 import 'package:flutter/material.dart';
 import 'package:boting/pages/base.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:boting/data/theme_data.dart';
 import 'package:page_transition/page_transition.dart';
 import 'db/models/user.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
@@ -40,12 +39,9 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'BoTing',
-      theme: ThemeData(
-        primarySwatch: createMaterialColor(hexToColor('#222222')),
-        textTheme: GoogleFonts.josefinSansTextTheme(
-          Theme.of(context).textTheme,
-        ),
-      ),
+      theme:  MediaQuery.of(context).platformBrightness == Brightness.dark
+          ? darkTheme
+          : lightTheme,
       home: AnimatedSplashScreen(
         splash: Image.asset(
           'assets/images/final.png',
@@ -57,6 +53,7 @@ class _SplashScreenState extends State<SplashScreen> {
         animationDuration: const Duration(milliseconds: 1500),
         duration: 2000,
         splashIconSize: 200,
+        centered: true,
       ),
     );
   }
