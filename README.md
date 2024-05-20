@@ -1,3 +1,5 @@
+### CHECKOUT : [BoTing-2.0](https://github.com/AbhiCrackerOfficial/BoTing-2.0) | UPGRADED VERSION (CURRENTLY UNDER CONSTRUCTION)
+#### THIS WAS JUST A BASIC CHATTING APP I BUILD WHEN I WAS LEARNING FLUTTER.
 # BoTing - Anonymous Chatting App
 
 BoTing is an innovative anonymous chatting app designed to provide users with a secure and private platform for group conversations. With a sleek dark-themed interface, the app emphasizes user anonymity and data privacy, ensuring a seamless and personalized chatting experience.
